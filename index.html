@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>咩咩单词</title>
+    <link rel="stylesheet" type="text/css" href="static/css/normalize.css">
+    <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/semantic/semantic.min.css">
+    <script type="text/javascript" src="assets/semantic/semantic.min.js"></script>
+    <script type="text/javascript" src="static/js/typed.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+    <script type="text/javascript" src="static/js/main.js"></script>
+    <script type="text/javascript" src="static/js/wilddog.js"></script>
+</head>
+<body>
+<div class="container">
+    <img class="logo" src="assets/image/logo.png">
+    <div class="site-header">
+        <div class="typed">
+        </div>
+    </div>
+    <div class="text-container">
+        <p>
+            To get a better vocabulary learning, let's use <a href="http://miemie.com">miemie</a> app to learn English.
+            We hope you can have a good time to learn. If you want to give us some suggestions, please leave your
+            comment at <a href="http://hi.ursb.me">my website</a>.
+        </p>
+        <p>
+            You may also want to visit my blog
+            <a href="http://blog.ursb.me" target="_blank">Airing's blog</a> for more infomation and
+            <a href="https://github.com/airingursb/miemie-web/" target="_blank">github repository</a> to contribute your
+            code.
+        </p>
+    </div>
+    <div class="ui green basic button" onclick="start()">Get Started!</div>
+    <!--临时 debug 注册事件-->
+    <div class="ui green basic button" onclick="showSignUp()">Sign Up</div>
+</div>
+
+<div class="ui united modal" id="modal1">
+    <i class="close icon"></i>
+    <div class="header">
+        Sign In
+    </div>
+    <div class="image content">
+        <div class="ui image">
+            <img style="width: 200px" src="assets/image/logo.png">
+        </div>
+        <div class="ui form">
+            <div class="field">
+                <label>E-mail</label>
+                <input id="signInEmail" type="email" name="email" placeholder="E-mail">
+            </div>
+            <div class="field">
+                <label>Password</label>
+                <input id="signInPassword" type="password" name="password" placeholder="Password">
+            </div>
+            <div id="btn-modal-1" class="ui button">I don't have account. Sign Up!</div>
+            <div class="ui button green" onclick="signIn()">Sign In</div>
+        </div>
+    </div>
+</div>
+
+<div class="ui united modal" id="modal2">
+    <i class="close icon"></i>
+    <div class="header">
+        Sign Up
+    </div>
+    <div class="image content">
+        <div class="ui medium image">
+            <img src="assets/image/logo.png">
+        </div>
+        <div class="ui form">
+            <div class="field">
+                <label>E-mail</label>
+                <input id="signUpEmail" type="email" name="email" placeholder="E-mail">
+            </div>
+            <div class="field">
+                <label>Password</label>
+                <input id="signUpPassword" type="password" name="password" placeholder="Password">
+            </div>
+            <div class="field">
+                <div class="ui checkbox">
+                    <input type="checkbox" tabindex="0">
+                    <label>I agree to the Terms and Conditions</label>
+                </div>
+            </div>
+            <button class="ui button green" type="submit" onclick="signUp()">Sign Up</button>
+        </div>
+    </div>
+</div>
+
+</div>
+
+</body>
+</html>

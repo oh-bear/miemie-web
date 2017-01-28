@@ -1,0 +1,95 @@
+@font-face{
+	font-family: kilsonburg;
+	src: url(../../assets/font/kilsonburg.ttf);
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+}
+
+.text-container {
+	display: flex;
+	flex-direction: column-reverse;
+	align-items: center;
+	justify-content: center;
+	height: 150px;
+	margin-top: 20px;
+	margin-bottom: -20px;
+}
+
+.text-container p {
+	color: #2c3e50;
+	margin-top: -100px;
+	max-width: 600px;
+	font-family: Source Sans Pro, Helvetica, sans-serif;
+	text-align: center;
+}
+
+.text-container a {
+	color: #42b983;
+	text-decoration: none;
+}
+
+.logo {
+	margin-top: -50px;
+	width: 100px;
+	height: 100px;
+}
+
+.site-header {
+	display: flex;
+	align-items: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	height: 68px;
+	font-family: kilsonburg,Avenir Next,Helvetica,Arial,Lantinghei SC,Microsoft YaHei,sans-serif;
+	font-weight: 200;
+	font-size: 32px;
+	color: #585858;
+	text-shadow: 0 1px 1px #47456d;
+}
+
+.typed {
+	text-align: center;
+}
+
+.typed-cursor{
+	display: inline-block;
+	opacity: 1;
+	white-space:nowrap;
+	-webkit-animation: blink 0.7s infinite;
+	-moz-animation: blink 0.7s infinite;
+	animation: blink 0.7s infinite;
+}
+
+@keyframes blink{
+	0% { opacity:1; }
+	50% { opacity:0; }
+	100% { opacity:1; }
+}
+
+@-webkit-keyframes blink{
+	0% { opacity:1; }
+	50% { opacity:0; }
+	100% { opacity:1; }
+}
+
+@-moz-keyframes blink{
+	0% { opacity:1; }
+	50% { opacity:0; }
+	100% { opacity:1; }
+}

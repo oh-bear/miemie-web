@@ -1,0 +1,16 @@
+{
+  "name": "miemie",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Airing",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "requirejs": "^2.3.2",
+    "wilddog": "^2.4.4"
+  }
+}
