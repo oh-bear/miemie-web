@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "jquery": "^3.1.1",
+    "qiniu-js": "^1.0.14-beta",
     "requirejs": "^2.3.2",
     "wilddog": "^2.4.4"
   }

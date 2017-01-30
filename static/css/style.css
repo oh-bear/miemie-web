@@ -5,13 +5,17 @@
 
 .clearfix:before,
 .clearfix:after {
-    content: " ";
-    display: table;
+	content: " ";
+	display: table;
 }
 
 .clearfix:after {
-    clear: both;
+	clear: both;
 }
+
+/*
+	index.html
+ */
 
 .container {
 	display: flex;
@@ -92,4 +96,19 @@
 	0% { opacity:1; }
 	50% { opacity:0; }
 	100% { opacity:1; }
+}
+
+
+/*
+	/app/index.html
+ */
+.menu-title {
+	display: flex;
+	align-items: center;
+	margin-left: 34px;
+	font-family: kilsonburg,Avenir Next,Helvetica,Arial,Lantinghei SC,Microsoft YaHei,sans-serif;
+	font-weight: 100;
+	font-size: 32px;
+	color: #585858;
+	text-shadow: 0 1px 1px #47456d;
 }
