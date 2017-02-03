@@ -83,3 +83,33 @@ $(document).ready(function () {
         backDelay: 700
     });
 });
+
+// setting页面事件
+function modify() {
+    var form2 = $(".form2");
+    var form1 = $(".form1");
+    form2.removeClass("hidden");
+    form1.addClass("hidden");
+}
+
+function save() {
+    var form2 = $(".form2");
+    var form1 = $(".form1");
+    var name = $("#username").val();
+    var birthday = $("#birthday").val();
+    var sex = $("input[name='sex']:checked").val();
+    var reg = /dddd\-dd\-dd/;
+    if(!reg.test(birthday)) {
+        alert("请输入正确的日期格式");
+        return
+    }
+    form2.addClass("hidden");
+    form1.removeClass("hidden");
+}
+
+function back() {
+    var form2 = $(".form2");
+    var form1 = $(".form1");
+    form2.addClass("hidden");
+    form1.removeClass("hidden");
+}

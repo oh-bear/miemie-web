@@ -1,20 +1,83 @@
-<html>
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport"
-	content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>咩咩单词 | 个人信息设置</title>
-	<link rel="stylesheet" type="text/css" href="../static/css/normalize.css">
-	<script type="text/javascript" src="../node_modules/jquery/dist/jquery.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="../assets/semantic/semantic.min.css">
-	<script type="text/javascript" src="../assets/semantic/semantic.min.js"></script>
-	<script type="text/javascript" src="../static/js/typed.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="../static/css/style.css">
-	<script type="text/javascript" src="../static/js/main.js"></script>
-	<script type="text/javascript" src="../static/js/wilddog.js"></script>
-</head>
-<body>
-	
-</body>
-</html>
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+	    <meta name="viewport"
+	    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	    <title>咩咩单词 | 个人信息设置</title>
+	    <link rel="stylesheet" type="text/css" href="../static/css/normalize.css">
+	    <script type="text/javascript" src="../node_modules/jquery/dist/jquery.min.js"></script>
+	    <link rel="stylesheet" type="text/css" href="../assets/semantic/semantic.min.css">
+	    <script type="text/javascript" src="../assets/semantic/semantic.min.js"></script>
+	    <script type="text/javascript" src="../static/js/typed.min.js"></script>
+	    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+	    <script type="text/javascript" src="../static/js/main.js"></script>
+	    <script type="text/javascript" src="../static/js/wilddog.js"></script>
+	</head>
+	<body>
+		<div class="container">
+		  <div class="setting">
+		    <div class="form1 ui form">
+		        <h2 class="setting-header">个人资料</h2>
+			    <div class="picture">
+					<img src="../assets/image/logo.png" alt="个人头像">
+				</div>
+				<p class="name-info">
+					<label>用户名</label>
+					<span>maruko0713</span>
+				</p>
+				<p class="birthday">
+					<label>生日</label>
+					<span>1996-07-13</span>
+				</p>
+				<p class="sex">
+				  <label>性别</label>
+				  <span>女</span>
+				</p>
+				<div class="button">
+					<button class="ui green basic button" onclick="modify()">编辑资料</button>
+				</div>
+		    </div>
+			<div class="form2 hidden ui form">
+		        <h2 class="setting-header">编辑资料</h2>
+				<div class="picture field">
+					<img src="../assets/image/logo.png" alt="个人头像">
+					<span class="ui fluid button btn-file">
+	                  <span id="buttonLabel">上传新头像</span> 
+	                  <input type="file" name="img">
+					</span>
+				</div>
+				<div class="username field">
+					<label>用户名</label>
+					<input id="username" type="text" placeholder="请输入你的新用户名^_^">
+				</div>
+				<div class="birthday field">
+					<label>生日</label>
+					<input id="birthday" type="date" placeholder="dddd-dd-dd">
+				</div>
+				<div class="sex inline fields">
+				  <label>性别</label>
+				  <div class="field">
+				    <div class="ui radio checkbox">
+				    	<input type="radio" checked="checked" name="sex" value="m">
+				  	    <label>男生</label>
+				    </div>
+				  </div>
+				  <div class="field">
+				    <div class="ui radio checkbox">
+				    	<input type="radio" checked="checked" name="sex" value="f">
+				  	    <label>女生</label>
+				    </div>
+				  </div>
+				</div>
+				<div class="button">
+					<button class="ui green basic button" onclick="save()">保存</button>
+				    <button class="ui button" onclick="back()">取消</button>
+				</div>
+			</div>
+		  </div>
+		  </div>
+	    </div>
+	</body>
+	</html>
