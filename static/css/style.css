@@ -13,6 +13,10 @@
     clear: both;
 }
 
+.hidden {
+	display:none;
+}
+
 .container {
 	display: flex;
 	flex-direction: column;
@@ -92,4 +96,41 @@
 	0% { opacity:1; }
 	50% { opacity:0; }
 	100% { opacity:1; }
+}   
+   
+
+.setting-header {
+	width:100%;
+	text-align:center;
+}
+
+.form1 label {
+    display:inline-block;
+    width:100px;
+}
+
+.button {
+	text-align:center;
+	margin-top:20px;
+}
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
 }
